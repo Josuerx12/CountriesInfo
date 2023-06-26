@@ -1,0 +1,33 @@
+@use '../../sass/variables'
+@use '../../sass/mixins'
+
+.navbardark
+    @include mixins.navbar-between()
+    background: variables.$darkmode_elements
+    color: variables.$darkmode_text
+    & button
+        @include mixins.center()
+        font-size: variables.$text_detail_size
+        gap: .3rem
+        font-weight: 600
+        color: variables.$darkmode_text
+        background: transparent
+        cursor: pointer
+        &:hover
+            & svg
+                transform: rotate(180deg)
+.navbarlight
+    @include mixins.navbar-between()
+    background: variables.$lightmode_elements
+    color: variables.$lightmode_text
+    & button
+        @include mixins.center()
+        font-size: variables.$text_detail_size
+        gap: .3rem
+        font-weight: 600
+        color: variables.$lightmode_text
+        background: transparent
+        cursor: pointer
+        &:hover
+            & svg
+                transform: rotate(180deg)
