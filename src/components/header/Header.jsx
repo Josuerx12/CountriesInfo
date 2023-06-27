@@ -1,19 +1,19 @@
 import { useThemeContext } from "../../context/ThemeContext";
-import "./Navbar.sass";
+import "./Header.sass";
 
 import { CgDarkMode } from "react-icons/cg";
 
-const Navbar = () => {
+const Header = () => {
   const { toggleTheme, theme } = useThemeContext();
   return (
-    <nav className={theme === "Dark" ? "navbardark" : "navbarlight"}>
+    <header className={theme === "Dark" ? "headerdark" : "headerlight"}>
       <h1>Where in the world?</h1>
       <button onClick={toggleTheme}>
         <CgDarkMode />
         {theme === "Dark" ? "Light Mode" : "Dark Mode"}
       </button>
-    </nav>
+    </header>
   );
 };
 
-export default Navbar;
+export default Header;

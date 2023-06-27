@@ -1,7 +1,7 @@
 @use '../../sass/variables'
 @use '../../sass/mixins'
 
-.navbardark
+.headerdark
     @include mixins.navbar-between()
     background: variables.$darkmode_elements
     color: variables.$darkmode_text
@@ -16,7 +16,7 @@
         &:hover
             & svg
                 transform: rotate(180deg)
-.navbarlight
+.headerlight
     @include mixins.navbar-between()
     background: variables.$lightmode_elements
     color: variables.$lightmode_text
