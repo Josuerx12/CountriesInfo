@@ -1,0 +1,48 @@
+@use '../../sass/variables'
+@use '../../sass/mixins'
+
+.countriesDark
+    padding: 0rem 6rem
+    margin: auto
+    @include mixins.space-between
+    flex-wrap: wrap
+    gap: 3rem
+    & .countryCard
+        background: variables.$darkmode_elements
+        border-radius: variables.$border-radius
+        z-index: 999
+        width: 330px
+        height: 350px
+        cursor: pointer
+        & img
+            width: 100%
+            height: 150px
+            border-radius: 5px 5px 0 0
+        & .informations
+            padding: 2rem
+        &:hover
+            transform: translateY(-10px)
+.countriesLight
+    padding: 0rem 6rem
+    margin: auto
+    @include mixins.space-between
+    flex-wrap: wrap
+    gap: 3rem
+    & .countryCard
+        background: variables.$lightmode_elements
+        border-radius: variables.$border-radius
+        z-index: 999
+        width: 330px
+        height: 350px
+        cursor: pointer
+        & img
+            width: 100%
+            height: 150px
+            border-radius: 5px 5px 0 0
+        & .informations
+            padding: 2rem
+        &:hover
+            transform: translateY(-10px)
+@media (max-width: 800px)
+    .countriesDark
+        @include mixins.center()
