@@ -1,12 +1,6 @@
-@use '../../sass/variables'
+@use '../../sass/mixins'
 
 .dark
-    background: variables.$darkmode_bg
-    color: variables.$darkmode_text
-    min-height: 100vh
-    width: 100%
+    @include mixins.dark()
 .light
-    background: variables.$lightmode_bg
-    color: variables.$lightmode_text
-    min-height: 100vh
-    width: 100%
+    @include mixins.light()

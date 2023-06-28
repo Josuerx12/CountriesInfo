@@ -1,3 +1,5 @@
+@use './variables'
+
 @mixin space-between()
     display: flex
     align-items: center
@@ -6,4 +8,13 @@
     display: flex
     justify-content: center
     align-items: center
-    text-align: center
+@mixin dark()
+    background: variables.$darkmode_bg
+    color: variables.$darkmode_text
+    min-height: 100vh
+    width: 100%
+@mixin light()
+    background: variables.$lightmode_bg
+    color: variables.$lightmode_text
+    min-height: 100vh
+    width: 100%
