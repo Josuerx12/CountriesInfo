@@ -2,7 +2,7 @@
 
 ## Welcome 👋
 
-#### Project created with React.JS and the css processor SASS/LESS.
+#### Project built with React.JS and the css processor SASS/LESS.
 
 ---
 
