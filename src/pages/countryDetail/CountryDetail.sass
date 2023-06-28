@@ -18,6 +18,8 @@
 .detailLight
     @include mixins.light()
     padding: 3rem 6rem
+    @media (max-width: 1200px)
+        padding: 2rem 1rem
     & a
         background: variables.$lightmode_elements
         color: variables.$lightmode_text
@@ -28,4 +30,3 @@
         border-radius: variables.$border-radius
         gap: .5rem
         letter-spacing: .1rem
-        margin-bottom: 2.4rem

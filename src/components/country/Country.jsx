@@ -58,8 +58,11 @@ const Country = ({ country }) => {
         {country.borders && (
           <p className="borderCountries">
             <span>Border Countries: </span>{" "}
-            {Object.values(country.borders).map((i) => (
+            {/* {Object.values(country.borders).map((i) => (
               <Link to={`/info/${i}`}>{i}</Link>
+            ))} */}
+            {Object.values(country.borders).map((i) => (
+              <Link>{i}</Link>
             ))}
           </p>
         )}
