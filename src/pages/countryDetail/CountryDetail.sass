@@ -3,6 +3,8 @@
 .detailDark
     @include mixins.dark()
     padding: 3rem 6rem
+    @media (max-width: 1200px)
+        padding: 2rem 1rem
     & a
         background: variables.$darkmode_elements
         color: variables.$darkmode_text
@@ -13,8 +15,6 @@
         gap: .5rem
         letter-spacing: .1rem
         font-weight: 600
-        margin-bottom: 2.4rem
-        
 .detailLight
     @include mixins.light()
     padding: 3rem 6rem

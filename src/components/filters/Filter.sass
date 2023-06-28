@@ -3,7 +3,13 @@
 
 .filtersDark
     @include mixins.space-between()
-    padding: 3rem 6rem
+    gap: 1rem
+    flex-wrap: wrap
+    padding: 0 6rem
+    @media (max-width: 1065px)
+        padding: 0rem 2rem
+    @media (max-width: 600px)
+        padding: 0rem 1rem
     & label
         @include mixins.center()
         gap: .5rem
@@ -19,7 +25,13 @@
         & input
             color: variables.$darkmode_text
             font-weight: bold
-            width: 300px
+            width: 25vw
+            @media (max-width: 800px)
+                width: 35vw
+            @media (max-width: 625px)
+                width: 70vw
+            @media (max-width: 488px)
+                width: 60vw
     & select
         background: variables.$darkmode_elements
         color: variables.$darkmode_text
@@ -30,7 +42,13 @@
 
 .filtersLight
     @include mixins.space-between()
-    padding: 3rem 6rem
+    gap: 1rem
+    flex-wrap: wrap
+    padding: 0 6rem
+    @media (max-width: 1065px)
+        padding: 0rem 2rem
+    @media (max-width: 600px)
+        padding: 0rem 1rem
     & label
         @include mixins.center()
         gap: .5rem
@@ -46,7 +64,13 @@
         & input
             color: variables.$lightmode_text
             font-weight: bold
-            width: 300px
+            width: 25vw
+            @media (max-width: 800px)
+                width: 35vw
+            @media (max-width: 625px)
+                width: 70vw
+            @media (max-width: 488px)
+                width: 60vw
     & select
         background: variables.$lightmode_elements
         color: variables.$lightmode_text

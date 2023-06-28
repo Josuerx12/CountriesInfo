@@ -9,12 +9,14 @@ const Home = () => {
   const { filteredCountries, loading } = useFilter();
   return (
     <main className={theme === "Dark" ? "dark" : "light"}>
-      <Filter />
-      <Countries
-        countries={filteredCountries}
-        loading={loading}
-        theme={theme}
-      />
+      <section>
+        <Filter />
+        <Countries
+          countries={filteredCountries}
+          loading={loading}
+          theme={theme}
+        />
+      </section>
     </main>
   );
 };

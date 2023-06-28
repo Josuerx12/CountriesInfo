@@ -2,5 +2,18 @@
 
 .dark
     @include mixins.dark()
+    & section
+        padding: 3rem 6rem
+        @media (max-width: 1065px)
+            padding: 1rem 2rem
+        @media (max-width: 600px)
+            padding: 1rem 1rem
+
 .light
     @include mixins.light()
+    & section
+        padding: 3rem 6rem
+        @media (max-width: 640px)
+            padding: 1rem 2rem
+        @media (max-width: 600px)
+            padding: 1rem 1rem

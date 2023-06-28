@@ -2,19 +2,25 @@
 @use '../../sass/mixins'
 
 .countriesDark
-    padding: 0rem 6rem
-    margin: auto
-    @include mixins.space-between
+    @include mixins.space-between()
     flex-wrap: wrap
-    gap: 3rem
+    gap: 2rem
     & .countryCard
         background: variables.$darkmode_elements
         border-radius: variables.$border-radius
         z-index: 999
-        width: 330px
-        height: 350px
+        width: 15vw
+        height: 400px
         cursor: pointer
         color: variables.$darkmode_text
+        @media (max-width: 1500px)
+            width: 20vw
+        @media (max-width: 1400px)
+            width: 30vw
+        @media (max-width: 900px)
+            width: 35vw
+        @media (max-width: 650px)
+            width: 80vw
         & h2
             margin-bottom: .5rem
         & p
@@ -29,11 +35,9 @@
         &:hover
             transform: translateY(-10px)
 .countriesLight
-    padding: 0rem 6rem
-    margin: auto
-    @include mixins.space-between
+    @include mixins.space-between()
     flex-wrap: wrap
-    gap: 3rem
+    gap: 2rem
     & .countryCard
         background: variables.$lightmode_elements
         border-radius: variables.$border-radius
@@ -42,6 +46,14 @@
         height: 350px
         cursor: pointer
         color: variables.$lightmode_text
+        @media (max-width: 1500px)
+            width: 20vw
+        @media (max-width: 1400px)
+            width: 30vw
+        @media (max-width: 900px)
+            width: 35vw
+        @media (max-width: 650px)
+            width: 80vw
         & h2
             margin-bottom: .5rem
         & p
@@ -55,6 +67,3 @@
             padding: 2rem
         &:hover
             transform: translateY(-10px)
-@media (max-width: 800px)
-    .countriesDark
-        @include mixins.center()
