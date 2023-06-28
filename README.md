@@ -7,7 +7,7 @@
 ---
 
 App hosted at verceAPP.
-Follow this link to acess the view part of this project: [Click Here...](doc:https://countries-info-blond.vercel.app/)
+Follow this link to access the view part of this project: [Click Here...](doc:https://countries-info-blond.vercel.app/)
 Design and ideas by frontend Mentor.
 
 ---
